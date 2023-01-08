@@ -68,17 +68,9 @@
 			"request": {
 				"method": "POST",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"symbol\": \"MSFT\",\r\n    \"date\":\"202111121200\",\r\n    \"value\": \"12\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
 				},
 				"url": {
-					"raw": "localhost:8082/api/v1/stocks",
+					"raw": "localhost:8082/api/v1/stocks/MSFT/20211112120000000",
 					"host": [
 						"localhost"
 					],
@@ -86,7 +78,9 @@
 					"path": [
 						"api",
 						"v1",
-						"stocks"
+						"stocks",
+						"MSFT",
+						"20211112120000000"
 					]
 				}
 			},
